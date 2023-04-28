@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3</title>
+</head>
+<body>
+    <script>
+        var matriz = [
+            [5,7,8], // linha 1
+            [1,2,3], // linha 2
+            [9,6,4] // linha 3
+        ]
+
+        var n = 2
+
+        var final = []
+ 
+        for(var linha = 0; linha < matriz.length; linha++){
+            var lista = []
+            for(var coluna = 0; coluna < matriz[linha].length; coluna++) {
+                var multipicação = matriz[linha][coluna] * n
+                lista.push(multipicação)
+                
+            }    
+            final.push(lista)
+        }
+        
+        console.log(final)
+
+    </script>
+</body>
+</html>
